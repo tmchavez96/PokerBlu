@@ -29,6 +29,7 @@
         [self startAdvertising];
     } else {
         // Handle other Bluetooth states if necessary
+        // add a change
     }
 }
 
