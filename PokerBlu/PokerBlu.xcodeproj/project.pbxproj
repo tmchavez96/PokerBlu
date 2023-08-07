@@ -20,6 +20,8 @@
 		B2D766AC2A77701E0054734B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D766AB2A77701E0054734B /* Main.storyboard */; };
 		B2D766AF2A7772510054734B /* HostSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D766AE2A7772510054734B /* HostSearchViewController.m */; };
 		B2D766B42A78BF940054734B /* BlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D766B32A78BF940054734B /* BlueToothManager.m */; };
+		B2D766B82A807FAB0054734B /* BlueToothHostManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D766B72A807FAB0054734B /* BlueToothHostManager.m */; };
+		B2D766BB2A8086660054734B /* HostingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D766BA2A8086660054734B /* HostingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		B2D766AE2A7772510054734B /* HostSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostSearchViewController.m; sourceTree = "<group>"; };
 		B2D766B22A78BF940054734B /* BlueToothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothManager.h; sourceTree = "<group>"; };
 		B2D766B32A78BF940054734B /* BlueToothManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothManager.m; sourceTree = "<group>"; };
+		B2D766B62A807FAB0054734B /* BlueToothHostManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothHostManager.h; sourceTree = "<group>"; };
+		B2D766B72A807FAB0054734B /* BlueToothHostManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothHostManager.m; sourceTree = "<group>"; };
+		B2D766B92A8086660054734B /* HostingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostingViewController.h; sourceTree = "<group>"; };
+		B2D766BA2A8086660054734B /* HostingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 				B2D766AE2A7772510054734B /* HostSearchViewController.m */,
 				B2D766A62A7768E90054734B /* HistoryViewController.h */,
 				B2D766A72A7768E90054734B /* HistoryViewController.m */,
+				B2D766B92A8086660054734B /* HostingViewController.h */,
+				B2D766BA2A8086660054734B /* HostingViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -164,6 +172,8 @@
 			children = (
 				B2D766B22A78BF940054734B /* BlueToothManager.h */,
 				B2D766B32A78BF940054734B /* BlueToothManager.m */,
+				B2D766B62A807FAB0054734B /* BlueToothHostManager.h */,
+				B2D766B72A807FAB0054734B /* BlueToothHostManager.m */,
 			);
 			path = libraries;
 			sourceTree = "<group>";
@@ -305,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D766B82A807FAB0054734B /* BlueToothHostManager.m in Sources */,
 				B2D7666E2A7768160054734B /* AppDelegate.m in Sources */,
+				B2D766BB2A8086660054734B /* HostingViewController.m in Sources */,
 				B2D766B42A78BF940054734B /* BlueToothManager.m in Sources */,
 				B2D7667F2A7768170054734B /* main.m in Sources */,
 				B2D766A52A7768900054734B /* MainTabController.m in Sources */,
@@ -409,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -461,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

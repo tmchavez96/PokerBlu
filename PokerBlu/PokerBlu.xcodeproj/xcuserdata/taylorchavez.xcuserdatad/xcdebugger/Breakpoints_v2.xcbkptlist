@@ -14,10 +14,57 @@
             filePath = "PokerBlu/libraries/BlueToothManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-centralManager:didDiscoverPeripheral:advertisementData:RSSI:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "463C895F-E886-4D58-9A17-8354D5ED809A - c06530ac3955ea60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "463C895F-E886-4D58-9A17-8354D5ED809A - c06530ac3955e432"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "463C895F-E886-4D58-9A17-8354D5ED809A - c06530ac3955e708"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +77,42 @@
             filePath = "PokerBlu/libraries/BlueToothManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-centralManager:didConnectPeripheral:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1968F9DC-CF3A-4C21-998C-C055EFC03CED - 8a2af4c9dc47f5aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManager:didConnectPeripheral:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "1968F9DC-CF3A-4C21-998C-C055EFC03CED - 8a2af4c9dc47f459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManager:didConnectPeripheral:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,6 +129,38 @@
             endingLineNumber = "25"
             landmarkName = "-centralManagerDidUpdateState:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F3155CC-1E68-4B31-B5B5-4907136C2A94 - d84eca5d97bbd70d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManagerDidUpdateState:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "7F3155CC-1E68-4B31-B5B5-4907136C2A94 - d84eca5d97bbd4cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManagerDidUpdateState:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,6 +177,38 @@
             endingLineNumber = "16"
             landmarkName = "-initWithCompletion:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "067C8E8A-64B0-43DA-B112-27F271844A60 - 760d7e79759baa1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager init]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "067C8E8A-64B0-43DA-B112-27F271844A60 - be47e6c1999c5c99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager initWithCompletion:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,6 +225,38 @@
             endingLineNumber = "29"
             landmarkName = "-centralManagerDidUpdateState:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9813236D-9AAF-409B-96DF-0DA1A40AA129 - d84eca5d97bbd489"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManagerDidUpdateState:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "9813236D-9AAF-409B-96DF-0DA1A40AA129 - d84eca5d97bbd437"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BlueToothManager centralManagerDidUpdateState:]"
+                  moduleName = "PokerBlu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorchavez/Desktop/dev/PokerBlu-ios/PokerBlu/PokerBlu/libraries/BlueToothManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

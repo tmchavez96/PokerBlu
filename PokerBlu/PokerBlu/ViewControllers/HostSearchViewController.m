@@ -6,10 +6,10 @@
 //
 
 #import "HostSearchViewController.h"
+#import "HostingViewController.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
 @interface HostSearchViewController ()
-
 @end
 
 @implementation HostSearchViewController
@@ -38,6 +38,15 @@ NSString  *_Nullable kHostDefaultCellIdentifier = @"cell";
         strongSelf->_content = list.mutableCopy;
         [strongSelf->_table reloadData];
     }];
+    // Create a custom button
+    UIBarButtonItem *customButton = [[UIBarButtonItem alloc] initWithTitle:@"Button" style:UIBarButtonItemStylePlain target:self action:@selector(openHostView:)];
+    // Add the button to the navigation item
+    self.navigationItem.rightBarButtonItem = customButton;
+}
+
+- (void)openHostView:(id)sender {
+    HostingViewController *hostingVc = [[HostingViewController alloc] init];
+    [self.navigationController pushViewController:hostingVc animated:YES];
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -52,7 +61,9 @@ NSString  *_Nullable kHostDefaultCellIdentifier = @"cell";
     CBPeripheral *curPeripheral = _content[indexPath.row];
     if(curPeripheral){
         NSString *curName = curPeripheral.name ?: @"(ghost)";
-        NSString *rowText = [[@(indexPath.row) stringValue] stringByAppendingFormat:@") %@ - %@",curName, [self stateToString: curPeripheral.state]];
+//        NSString *rowText = [[@(indexPath.row) stringValue] stringByAppendingFormat:@") %@ - %@",curName, [self stateToString: curPeripheral.state]];
+        NSString *rowText = [[@(indexPath.row) stringValue] stringByAppendingFormat:@") %@ - %@",curName, curPeripheral.identifier];
+
         [cell.textLabel setText:rowText];
     }
     return cell;
@@ -77,4 +88,10 @@ NSString  *_Nullable kHostDefaultCellIdentifier = @"cell";
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_content count];
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CBPeripheral *curPeripheral = _content[indexPath.row];
+    [_btm connectToPeripheral:curPeripheral];
+}
+
 @end

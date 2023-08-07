@@ -14,13 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void (^PeripheralListCompletion)(NSArray *list);
 
 
-@interface BlueToothManager : NSObject <CBCentralManagerDelegate>
+@interface BlueToothManager : NSObject <CBCentralManagerDelegate, CBPeripheralDelegate>
 
 @property (strong, nonatomic) CBCentralManager *centralManager;
 @property (strong, nonatomic) NSMutableArray *peripherals;
 @property (nonatomic, copy) PeripheralListCompletion peripheralCompletion;
 
 -(id) initWithCompletion:(PeripheralListCompletion) completion;
+
+-(BOOL)connectToPeripheral:(CBPeripheral *)peripheral;
 
 @end
 
