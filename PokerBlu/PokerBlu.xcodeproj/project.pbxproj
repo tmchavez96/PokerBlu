@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B279EFC92AA6CF3500B0D57A /* PlayerState.m in Sources */ = {isa = PBXBuildFile; fileRef = B279EFC82AA6CF3500B0D57A /* PlayerState.m */; };
+		B279EFCD2AA8476F00B0D57A /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B279EFCC2AA8476F00B0D57A /* GameViewController.m */; };
+		B279EFD02AA84F6D00B0D57A /* PokerBluPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = B279EFCF2AA84F6D00B0D57A /* PokerBluPeripheral.m */; };
 		B2D7666E2A7768160054734B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D7666D2A7768160054734B /* AppDelegate.m */; };
 		B2D766712A7768160054734B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D766702A7768160054734B /* SceneDelegate.m */; };
 		B2D766792A7768170054734B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D766782A7768170054734B /* Assets.xcassets */; };
@@ -42,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B279EFC72AA6CF3500B0D57A /* PlayerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerState.h; sourceTree = "<group>"; };
+		B279EFC82AA6CF3500B0D57A /* PlayerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerState.m; sourceTree = "<group>"; };
+		B279EFCB2AA8476F00B0D57A /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		B279EFCC2AA8476F00B0D57A /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		B279EFCE2AA84F6D00B0D57A /* PokerBluPeripheral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokerBluPeripheral.h; sourceTree = "<group>"; };
+		B279EFCF2AA84F6D00B0D57A /* PokerBluPeripheral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokerBluPeripheral.m; sourceTree = "<group>"; };
 		B2D766692A7768160054734B /* PokerBlu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerBlu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D7666C2A7768160054734B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2D7666D2A7768160054734B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,6 +172,8 @@
 				B2D766A72A7768E90054734B /* HistoryViewController.m */,
 				B2D766B92A8086660054734B /* HostingViewController.h */,
 				B2D766BA2A8086660054734B /* HostingViewController.m */,
+				B279EFCB2AA8476F00B0D57A /* GameViewController.h */,
+				B279EFCC2AA8476F00B0D57A /* GameViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +192,10 @@
 		B2D766B52A78C3310054734B /* models */ = {
 			isa = PBXGroup;
 			children = (
+				B279EFC72AA6CF3500B0D57A /* PlayerState.h */,
+				B279EFC82AA6CF3500B0D57A /* PlayerState.m */,
+				B279EFCE2AA84F6D00B0D57A /* PokerBluPeripheral.h */,
+				B279EFCF2AA84F6D00B0D57A /* PokerBluPeripheral.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -315,7 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B279EFC92AA6CF3500B0D57A /* PlayerState.m in Sources */,
+				B279EFCD2AA8476F00B0D57A /* GameViewController.m in Sources */,
 				B2D766B82A807FAB0054734B /* BlueToothHostManager.m in Sources */,
+				B279EFD02AA84F6D00B0D57A /* PokerBluPeripheral.m in Sources */,
 				B2D7666E2A7768160054734B /* AppDelegate.m in Sources */,
 				B2D766BB2A8086660054734B /* HostingViewController.m in Sources */,
 				B2D766B42A78BF940054734B /* BlueToothManager.m in Sources */,

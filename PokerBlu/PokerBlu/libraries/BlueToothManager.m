@@ -6,6 +6,10 @@
 //
 
 #import "BlueToothManager.h"
+#import "PlayerState.h"
+#import "PokerBluPeripheral.h"
+
+
 
 @implementation BlueToothManager
 
@@ -69,9 +73,10 @@
 }
 
 //
--(void)connectToPeripheral:(CBPeripheral *)peripheral {
+- (BOOL)connectToPeripheral:(CBPeripheral *)peripheral {
     [self.centralManager connectPeripheral:peripheral options:nil];
     [self.centralManager stopScan];
+    return YES;
 }
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
@@ -82,6 +87,7 @@
     // Now you can interact with the connected peripheral
     // For example, you can discover services and characteristics, read/write data, etc.
 }
+
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
     NSLog(@"Discovered services");
@@ -107,10 +113,12 @@
             // Read from the characteristic
             [peripheral readValueForCharacteristic:characteristic];
             
-            // Write to the characteristic
-            NSData *dataToSend = [@"Hello, Peripheral!" dataUsingEncoding:NSUTF8StringEncoding];
-            [peripheral writeValue:dataToSend forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
-            NSLog(@"write to char");
+//            // Write to the characteristic
+//            NSData *dataToSend = [@"Hello, Peripheral!" dataUsingEncoding:NSUTF8StringEncoding];
+//            [peripheral writeValue:dataToSend forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+//            NSLog(@"write to char");
+            // save the current characteristic oif its our desired characteristic
+            _curCharacteristic = characteristic;
         }
     }
 }
@@ -140,5 +148,29 @@
     }
 }
 
+
+-(BOOL)writeToPeripheral:(CBPeripheral *)peripheral
+                 message:(NSString *) message {
+    NSDictionary *messageDict = @{
+        @"type":@"message",
+        @"message":message
+    };
+    NSData *fullData = [NSKeyedArchiver archivedDataWithRootObject:messageDict requiringSecureCoding:NO error:nil];
+    NSMutableArray<NSData *> *packets = @[].mutableCopy;
+    NSInteger maxLength = 20; // Maximum packet size
+    for (NSInteger offset = 0; offset < fullData.length; offset += maxLength) {
+        NSInteger length = MIN(fullData.length - offset, maxLength);
+        NSData *curPacket = [fullData subdataWithRange:NSMakeRange(offset, length)];
+        [packets addObject:curPacket];
+    }
+    // first send a packet
+    NSString *headerMessage = [NSString stringWithFormat: @"h:%lu", (unsigned long)packets.count];
+    [peripheral writeValue: [headerMessage dataUsingEncoding:NSUTF8StringEncoding] forCharacteristic:_curCharacteristic type:CBCharacteristicWriteWithResponse];
+    for (int i = 0; i < packets.count; i++){
+        NSData *currentPacket = packets[i];
+        [peripheral writeValue:currentPacket forCharacteristic:_curCharacteristic type:CBCharacteristicWriteWithResponse];
+    }
+    return YES;
+}
 
 @end

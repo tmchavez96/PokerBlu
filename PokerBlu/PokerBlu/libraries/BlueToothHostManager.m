@@ -76,11 +76,27 @@
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request {
-    
+    // NSString request.value
 }
 
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *)requests {
-    
+    NSLog(@"recieved write request");
+    for (CBATTRequest *request in requests) {
+           if ([request.characteristic.UUID isEqual:[CBUUID UUIDWithString:_characteristicId]]) {
+               // Read data from the request's value
+               NSData *receivedData = request.value;
+               
+               // Process the received data (chunk)
+               NSString *receivedString = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+               NSLog(@"Received data chunk: %@", receivedString);
+               
+               // Continue handling the data as needed
+               // You can append it to a buffer to reconstruct the complete data, for example
+           }
+           
+           // Respond to the request to indicate success or failure
+           [peripheral respondToRequest:request withResult:CBATTErrorSuccess];
+       }
 }
 
 @end

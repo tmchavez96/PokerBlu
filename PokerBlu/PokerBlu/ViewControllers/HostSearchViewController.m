@@ -7,6 +7,8 @@
 
 #import "HostSearchViewController.h"
 #import "HostingViewController.h"
+#import "GameViewController.h"
+
 #import <CoreBluetooth/CoreBluetooth.h>
 
 @interface HostSearchViewController ()
@@ -48,6 +50,7 @@ NSString  *_Nullable kHostDefaultCellIdentifier = @"cell";
     HostingViewController *hostingVc = [[HostingViewController alloc] init];
     [self.navigationController pushViewController:hostingVc animated:YES];
 }
+
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
        
@@ -92,6 +95,10 @@ NSString  *_Nullable kHostDefaultCellIdentifier = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CBPeripheral *curPeripheral = _content[indexPath.row];
     [_btm connectToPeripheral:curPeripheral];
+    
+    // handle if doesn't connect ?
+    GameViewController *gameVc = [[GameViewController alloc] initWithConnection:curPeripheral andManager:_btm];
+    [self.navigationController pushViewController:gameVc animated:YES];
 }
 
 @end

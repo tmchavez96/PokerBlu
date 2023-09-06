@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "PokerBluPeripheral.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
